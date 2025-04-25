@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bucket List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .intro h1 {
+      font-size: 2rem;
+      color: #5a4fcf;
+    }
+
+    .category {
+      margin-bottom: 25px;
+    }
+
+    .category h2 {
+      color: #444;
+      margin-bottom: 10px;
+      border-left: 5px solid #5a4fcf;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    ul li {
+      padding: 10px 15px;
+      margin: 8px 0;
+      background: #eee;
+      border-radius: 8px;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    ul li::before {
+      content: "✔";
+      color: green;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    ul li:hover {
+      background: #dfe3f3;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .intro h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .intro img {
+        width: 90px;
+        height: 90px;
+      }
+
+      .category h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="intro">
+      <img src="https://images.pexels.com/photos/655674/pexels-photo-655674.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200" alt="Sadia's Profile Picture" />
+      <h1>Sadia's Bucket List</h1>
+      <p>A list of dreams I want to accomplish in life ✨</p>
+    </div>
+
+    <div class="category">
+      <h2>🌍 Travel Goals</h2>
+      <ul>
+        <li>See the Northern Lights in Iceland</li>
+        <li>Visit all 7 continents</li>
+        <li>Road trip across New Zealand</li>
+        <li>Hot air balloon ride in Cappadocia</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>💡 Skills to Learn</h2>
+      <ul>
+        <li>Master full-stack development</li>
+        <li>Learn to play the piano</li>
+        <li>Fluency in Korean and Spanish</li>
+        <li>Build a mobile app from scratch</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🎯 Life Goals</h2>
+      <ul>
+        <li>Write and publish a book</li>
+        <li>Start a passion project</li>
+        <li>Give a TED Talk</li>
+        <li>Run a marathon</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
